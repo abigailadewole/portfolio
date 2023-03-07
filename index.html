@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Novelsphere Writer Form</title>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title"> The Novelsphere Writer Form</h1>
+    <p id="description">Thank you for your interest in writing for The Novelsphere</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name-label" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label for="pronouns">Pronouns <input id="pronouns" type="text" placeholder="Enter your pronouns" required/></label>
+        <label for="email-label" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label for="number-label" id="number-label">Age <input id="number" type="number" min="18" max="120" placeholder="Select yor age" required></label>
+        <label for="location">Location <input id="location-label" type="text" placeholder="Enter your location" required/></label>
+       <label for="spec"> Have you reviewed the writer contribution description before applying? <select id="dropdown" name="spec">
+          <option value="">(select one)</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+         </select>
+        </label> 
+       
+      </fieldset>
+        
+      <fieldset>
+        <p>Are you capable of taking your own photos for articles if needed?</p>
+        <label for="yes-photos"><input type="radio" id="yes-photo" name="photos" value="1" />Yes</label>
+        <label for="no-photos"><input type="radio" id="no-photo" name="photos" value="2"/>No</label>
+        <label for="maybe-photos"><input type="radio" id="maybe-photo" name="photos" value="3"/>Maybe</label>
+         
+        <p>What topics do you envision yourself covering?</p> 
+        <label for="budget"><input type="checkbox" id="btravel" value="btravel"/>Budget travel</label>
+        <label for="slow"><input type="checkbox" id="stravel" value="stravel">Slow Travel</label>
+        <label for="sustainable"><input type="checkbox" id="sustainable" value="sustainable">Sustainability</label>
+        <label for="reviews"><input type="checkbox" id="reviews" value="reviews">Book Reviews</label>
+        <label for="lists"><input type="checkbox" id="lists" value="lists">Book Lists</label><br>
+        </label>
+        <label for="articles">Please expand on what you envision to write for The Novelsphere. What would your first 6 articles be about?<textarea id="article" name="article" placeholder="E.g. Top 10 best things to do in Marrakesh" rows="7"></textarea><br>
+          <label for="sample"> Writing Sample (File Upload)<input id="sample" type="file" name="file"></label><br>
+          <label for"sample-link">Writing Sample(Link To Live Content) <input id="sample-link" type="text"></label><br>
+          <label for="statement">Why do you think you'll be the perfect fit for our team? <textarea id="statement" name="statement" rows="7" required></textarea></label>
+          </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html> 
